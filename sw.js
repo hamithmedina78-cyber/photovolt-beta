@@ -1,0 +1,20 @@
+// Generado al construir. No editar.
+const CACHE = 'photovolt-2d4233275b';
+const ASSETS = ["./","./assets/index-CytBpMx2.js","./assets/dist-C93lqtQh.js","./assets/dist-js-CbOjAX5g.js","./assets/esm-C3U_8uB8.js","./assets/esm-CBl4TuOe.js","./assets/esm-D5oQcDvY.js","./assets/react-DBUbMW5b.js","./assets/rolldown-runtime-XKyaHtl9.js","./assets/three-BNkGEJe7.js","./assets/web-9SxXHxVW.js","./assets/web-D4-MDOhT.js","./assets/web-eCRsB1_7.js","./assets/index-Cj6xZlKw.css","./assets/lilita-one-latin-400-normal-87r-Z-Re.woff2","./assets/lilita-one-latin-400-normal-DXkechA3.woff","./assets/nunito-cyrillic-600-normal-BUjmtIuu.woff","./assets/nunito-cyrillic-600-normal-DJGQ2h05.woff2","./assets/nunito-cyrillic-800-normal-D3igD7Kl.woff2","./assets/nunito-cyrillic-800-normal-DymMgApb.woff","./assets/nunito-cyrillic-900-normal-CWPcV0_V.woff2","./assets/nunito-cyrillic-900-normal-Dr1fjxoU.woff","./assets/nunito-cyrillic-ext-600-normal-CWPPjBOD.woff2","./assets/nunito-cyrillic-ext-600-normal-vnfu4DTE.woff","./assets/nunito-cyrillic-ext-800-normal-B-cvGohL.woff2","./assets/nunito-cyrillic-ext-800-normal-pjRatrRO.woff","./assets/nunito-cyrillic-ext-900-normal-BLeVovcl.woff2","./assets/nunito-cyrillic-ext-900-normal-DKFql_-q.woff","./assets/nunito-latin-600-normal-Br8yIETf.woff2","./assets/nunito-latin-600-normal-Cd0eNu1l.woff","./assets/nunito-latin-800-normal-D-J0wlBY.woff","./assets/nunito-latin-800-normal-Dz8SOQK_.woff2","./assets/nunito-latin-900-normal-BVB1fGs6.woff2","./assets/nunito-latin-900-normal-CVn49sIn.woff","./assets/nunito-latin-ext-600-normal-BKUpuB78.woff","./assets/nunito-latin-ext-600-normal-Dd9Zuxh1.woff2","./assets/nunito-latin-ext-800-normal-CDcxIxx8.woff","./assets/nunito-latin-ext-800-normal-CtU8tJOV.woff2","./assets/nunito-latin-ext-900-normal-CTBZd6bf.woff","./assets/nunito-latin-ext-900-normal-Dllsvgjo.woff2","./assets/nunito-vietnamese-600-normal-BY8O6Cug.woff2","./assets/nunito-vietnamese-600-normal-DO1RqFw5.woff","./assets/nunito-vietnamese-800-normal-D_CZYdm9.woff2","./assets/nunito-vietnamese-800-normal-Dz0hZPb5.woff","./assets/nunito-vietnamese-900-normal-D6LWQAy_.woff2","./assets/nunito-vietnamese-900-normal-WV2-fBew.woff","./assets/patrick-hand-latin-400-normal-B7HHA2Vw.woff2","./assets/patrick-hand-latin-400-normal-Df9_VoRQ.woff","./assets/patrick-hand-latin-ext-400-normal-C2ywpnn3.woff","./assets/patrick-hand-latin-ext-400-normal-Dno5CMlI.woff2","./assets/patrick-hand-vietnamese-400-normal-65jA92mZ.woff2","./assets/patrick-hand-vietnamese-400-normal-CZjY324Y.woff","./audio/LEEME.md","./audio/manifest.json","./audio/music/empresa.mp3","./audio/music/menu.mp3","./audio/music/obra.mp3","./audio/music/oficina.mp3","./audio/sfx/bad.mp3","./audio/sfx/cash.mp3","./audio/sfx/click.mp3","./audio/sfx/clunk.mp3","./audio/sfx/drill.mp3","./audio/sfx/drive.mp3","./audio/sfx/ok.mp3","./audio/sfx/pop.mp3","./audio/sfx/ratchet.mp3","./audio/sfx/screw.mp3","./audio/sfx/seal.mp3","./audio/sfx/stamp.mp3","./audio/sfx/strip.mp3","./audio/sfx/torque.mp3","./audio/sfx/zap.mp3","./icon.svg","./icons/apple-touch-icon.png","./icons/favicon-48.png","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./manifest.webmanifest"];
+self.addEventListener('install', (e) => {
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+});
+self.addEventListener('activate', (e) => {
+  e.waitUntil(
+    caches.keys().then((ks) => Promise.all(ks.filter((k) => k.startsWith('photovolt-') && k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()),
+  );
+});
+self.addEventListener('fetch', (e) => {
+  const req = e.request;
+  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  if (req.mode === 'navigate') {
+    e.respondWith(fetch(req).then((r) => { const c = r.clone(); caches.open(CACHE).then((x) => x.put('./', c)); return r; }).catch(() => caches.match('./', { ignoreVary: true })));
+    return;
+  }
+  e.respondWith(caches.match(req, { ignoreVary: true }).then((hit) => hit || fetch(req).then((r) => { if (r.ok) { const c = r.clone(); caches.open(CACHE).then((x) => x.put(req, c)); } return r; })));
+});

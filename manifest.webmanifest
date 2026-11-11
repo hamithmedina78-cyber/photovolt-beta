@@ -1,0 +1,18 @@
+{
+  "name": "PHOTOVOLT · Empresa solar",
+  "short_name": "PHOTOVOLT",
+  "description": "Arma tu empresa solar en Chihuahua: cotiza, diseña, instala con tus manos y crece hasta el monopolio.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FFF8EC",
+  "theme_color": "#7CC6F2",
+  "categories": ["games", "education", "simulation"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

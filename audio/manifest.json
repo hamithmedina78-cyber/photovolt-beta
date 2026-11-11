@@ -1,0 +1,63 @@
+{
+  "sfx": {
+    "pop": [
+      "sfx/pop.mp3"
+    ],
+    "click": [
+      "sfx/click.mp3"
+    ],
+    "screw": [
+      "sfx/screw.mp3"
+    ],
+    "clunk": [
+      "sfx/clunk.mp3"
+    ],
+    "strip": [
+      "sfx/strip.mp3"
+    ],
+    "zap": [
+      "sfx/zap.mp3"
+    ],
+    "ok": [
+      "sfx/ok.mp3"
+    ],
+    "cash": [
+      "sfx/cash.mp3"
+    ],
+    "bad": [
+      "sfx/bad.mp3"
+    ],
+    "drill": [
+      "sfx/drill.mp3"
+    ],
+    "drive": [
+      "sfx/drive.mp3"
+    ],
+    "ratchet": [
+      "sfx/ratchet.mp3"
+    ],
+    "torque": [
+      "sfx/torque.mp3"
+    ],
+    "seal": [
+      "sfx/seal.mp3"
+    ],
+    "stamp": [
+      "sfx/stamp.mp3"
+    ]
+  },
+  "music": {
+    "menu": [
+      "music/menu.mp3"
+    ],
+    "oficina": [
+      "music/oficina.mp3"
+    ],
+    "obra": [
+      "music/obra.mp3"
+    ],
+    "empresa": [
+      "music/empresa.mp3"
+    ]
+  }
+}
